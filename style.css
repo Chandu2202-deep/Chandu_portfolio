@@ -1,0 +1,158 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #111827, #1e293b);
+  padding: 50px 20px;
+  text-align: center;
+}
+.header-content {
+  max-width: 900px;
+  margin: auto;
+}
+.avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #58a6ff;
+  margin-bottom: 20px;
+}
+.intro-text h1 {
+  font-size: 2.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+.about {
+  margin-top: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+/* Sections */
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #58a6ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills li {
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Project Cards */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.meta {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  background: #161b22;
+  color: #e6edf3;
+  font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
+.contact-form button {
+  background: #58a6ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  border-top: 1px solid #1f2937;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .skills {
+    justify-content: center;
+  }
+}
